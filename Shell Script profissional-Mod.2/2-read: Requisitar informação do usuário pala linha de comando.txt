@@ -1,0 +1,35 @@
+# read NOME
+Silvério
+
+# echo $NOME
+Silvério
+
+# read -p "Digite seu nome: " NOME
+Digite seu nome: Silvério Simões
+
+# echo $NOME
+Silvério Simões
+
+# ls
+olamundo.sh
+
+# cp olamundo.sh mensagem.sh
+
+# ls
+mensagem.sh
+olamundo.sh
+
+# gedit ./mensagem.sh
+#!/bin/bash
+
+echo "Bem-vindo ao programa de mensagem de usuário"
+
+read -p "Digite seu nome: " NOME
+
+echo "$NOME, bem-vindo ao curso Shell Script!"
+
+# ./mensagem.sh 
+Bem-vindo ao programa de mensagem de usuário
+Digite seu nome: Silvério
+Silvério, bem-vindo ao curso Shell Script!
+

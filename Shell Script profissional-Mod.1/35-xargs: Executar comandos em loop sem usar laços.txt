@@ -1,0 +1,103 @@
+# echo "1 2 3 4 5 6" |xargs
+1 2 3 4 5 6
+
+# echo "1 2 3 4 5 6" |xargs -n 1
+1
+2
+3
+4
+5
+6
+
+# echo "1 2 3 4 5 6" |xargs -n 2
+1 2
+3 4
+5 6
+
+# echo "1 2 3 4 5 6" |xargs -n 3
+1 2 3
+4 5 6
+
+# cat arquivos.txt 
+creStackedTrace-m0-0.rsf
+creStackedTrace-m0-10.rsf
+creStackedTrace-m0-11.rsf
+creStackedTrace-m0-12.rsf
+creStackedTrace-m0-13.rsf
+creStackedTrace-m0-14.rsf
+creStackedTrace-m0-15.rsf
+creStackedTrace-m0-16.rsf
+creStackedTrace-m0-17.rsf
+creStackedTrace-m0-18.rsf
+creStackedTrace-m0-19.rsf
+creStackedTrace-m0-1.rsf
+creStackedTrace-m0-2.rsf
+creStackedTrace-m0-20.rsf
+creStackedTrace-m0-21.rsf
+creStackedTrace-m0-22.rsf
+creStackedTrace-m0-23.rsf
+creStackedTrace-m0-24.rsf
+creStackedTrace-m0-25.rsf
+creStackedTrace-m0-26.rsf
+creStackedTrace-m0-27.rsf
+creStackedTrace-m0-28.rsf
+creStackedTrace-m0-29.rsf
+creStackedTrace-m0-3.rsf
+
+# xargs -a arquivos.txt 
+creStackedTrace-m0-0.rsf creStackedTrace-m0-10.rsf creStackedTrace-m0-11.rsf creStackedTrace-m0-12.rsf creStackedTrace-m0-13.rsf creStackedTrace-m0-14.rsf creStackedTrace-m0-15.rsf creStackedTrace-m0-16.rsf creStackedTrace-m0-17.rsf creStackedTrace-m0-18.rsf creStackedTrace-m0-19.rsf creStackedTrace-m0-1.rsf creStackedTrace-m0-2.rsf creStackedTrace-m0-20.rsf creStackedTrace-m0-21.rsf creStackedTrace-m0-22.rsf creStackedTrace-m0-23.rsf creStackedTrace-m0-24.rsf creStackedTrace-m0-25.rsf creStackedTrace-m0-26.rsf creStackedTrace-m0-27.rsf creStackedTrace-m0-28.rsf creStackedTrace-m0-29.rsf creStackedTrace-m0-3.rsf
+
+# xargs -a arquivos.txt -n 2
+creStackedTrace-m0-0.rsf creStackedTrace-m0-10.rsf
+creStackedTrace-m0-11.rsf creStackedTrace-m0-12.rsf
+creStackedTrace-m0-13.rsf creStackedTrace-m0-14.rsf
+creStackedTrace-m0-15.rsf creStackedTrace-m0-16.rsf
+creStackedTrace-m0-17.rsf creStackedTrace-m0-18.rsf
+creStackedTrace-m0-19.rsf creStackedTrace-m0-1.rsf
+creStackedTrace-m0-2.rsf creStackedTrace-m0-20.rsf
+creStackedTrace-m0-21.rsf creStackedTrace-m0-22.rsf
+creStackedTrace-m0-23.rsf creStackedTrace-m0-24.rsf
+creStackedTrace-m0-25.rsf creStackedTrace-m0-26.rsf
+creStackedTrace-m0-27.rsf creStackedTrace-m0-28.rsf
+creStackedTrace-m0-29.rsf creStackedTrace-m0-3.rsf
+[silverio@fedora Shell Script profissional-Mod.1]$ 
+
+# echo "um dois tres" | xargs mkdir
+
+# ls
+arquivos.txt	dois	tres	um
+
+# echo "um dois tres" | xargs -t rm -r
+rm -r um dois tres 
+
+# ls
+arquivos.txt
+
+# echo "um dois tres" | xargs -n 1 -p mkdir
+mkdir um ?...y
+mkdir dois ?...n
+mkdir tres ?...
+
+# ls
+arquivos.txt	um
+
+# echo "um dois tres" | xargs -n 1 -p rm -r
+rm -r um ?...y
+rm -r dois ?...n
+rm -r tres ?...n
+
+# echo -e "um\ndois\ntres" | xargs \
+> -I % -p bash -c 'touch %.txt'
+bash -c 'touch um.txt' ?...y
+bash -c 'touch dois.txt' ?...y
+bash -c 'touch tres.txt' ?...n
+
+# ls
+arquivos.txt	dois.txt	um.txt
+
+# ls -1 | xargs \
+> -I % -p bash -c 'rm %'
+bash -c 'rm arquivos.txt' ?...n
+bash -c 'rm dois.txt' ?...y
+bash -c 'rm um.txt' ?...y
+

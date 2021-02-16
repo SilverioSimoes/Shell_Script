@@ -1,0 +1,48 @@
+# mkdir -p teste/teste2/teste3
+
+# tree teste
+teste
+└── teste2
+    └── teste3
+
+# touch teste/teste2/arquivo.txt
+
+# touch teste/teste2/arquivo2.txt
+
+# tree teste
+teste
+└── teste2
+    ├── arquivo2.txt
+    ├── arquivo.txt
+    └── teste3
+
+# touch teste/teste2/teste3/arquivo3.txt
+
+# tree teste
+teste
+└── teste2
+    ├── arquivo2.txt
+    ├── arquivo.txt
+    └── teste3
+        └── arquivo3.txt
+
+# tree teste/ -o file.txt
+
+# cat file.txt 
+teste/
+└── teste2
+    ├── arquivo2.txt
+    ├── arquivo.txt
+    └── teste3
+        └── arquivo3.txt
+
+# vim file.txt
+^[[01;34mteste/^[[0m
+└── ^[[01;34mteste2^[[0m
+    ├── arquivo2.txt
+    ├── arquivo.txt
+    └── ^[[01;34mteste3^[[0m
+        └── arquivo3.txt
+
+2 directories, 3 files
+

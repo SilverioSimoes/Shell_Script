@@ -1,0 +1,51 @@
+# ls
+'26-tee: Gerar arquivos de log das saídas de um pipe.txt'
+'27 e 28-date: Exibir data e hora local em formato específico.txt'
+'29-rev: Reverter sequências de caracteres.txt'
+'2-clear, reset, ctrl+l: Limpar a tela do terminal.txt'
+'30-paste: Concatenar arquivos por colunas.txt'
+'31-cal: Exibir o calendário na tela do terminal.txt'
+'32, 33 e 34-sort: Organizar lista em ordem alfabética e numérica.txt'
+'35-xargs: Executar comandos em loop sem usar laços.txt'
+'36, 37 e 38-sed: Editor de fluxo do terminal.txt'
+'39 2 40-grep: Pesquisar strings em arquivo de texto.txt'
+'41-tree: Lista hierárquica de diretórios em formato de árvore.txt'
+ arquivos.txt
+ arquivo.txt
+ cadastro.txt
+ file.txt
+ novo.txt
+ numeros2.txt
+ numeros.txt
+ teste
+ texto.txt
+ usuarios2.txt
+ usuarios.txt
+
+# clear
+
+# ls
+'26-tee: Gerar arquivos de log das saídas de um pipe.txt'
+'27 e 28-date: Exibir data e hora local em formato específico.txt'
+'29-rev: Reverter sequências de caracteres.txt'
+'2-clear, reset, ctrl+l: Limpar a tela do terminal.txt'
+'30-paste: Concatenar arquivos por colunas.txt'
+'31-cal: Exibir o calendário na tela do terminal.txt'
+'32, 33 e 34-sort: Organizar lista em ordem alfabética e numérica.txt'
+'35-xargs: Executar comandos em loop sem usar laços.txt'
+'36, 37 e 38-sed: Editor de fluxo do terminal.txt'
+'39 2 40-grep: Pesquisar strings em arquivo de texto.txt'
+'41-tree: Lista hierárquica de diretórios em formato de árvore.txt'
+ arquivos.txt
+ arquivo.txt
+ cadastro.txt
+ file.txt
+ novo.txt
+ numeros2.txt
+ numeros.txt
+ teste
+ texto.txt
+ usuarios2.txt
+ usuarios.txt
+
+# reset

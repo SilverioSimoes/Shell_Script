@@ -1,0 +1,33 @@
+# echo "1,2,3" | wc
+1	1	6
+
+# echo "1,2,3 | tee log.txt | wc
+1	1	6
+
+# ls
+log.txt
+ 
+# cat log.txt
+1,2,3
+
+# echo "5,6,7" | tee log.txt | wc
+1	1	6
+
+# cat log.txt
+5,6,7
+
+# echo "5,6,7" | tee -a log.txt | wc
+1	1	6
+
+# cat log.txt
+5,6,7
+5,6,7
+
+# echo "Nova linha" | tee -a log.txt | wc
+
+
+# cat log.txt
+5,6,7
+5,6,7
+Nova linha
+

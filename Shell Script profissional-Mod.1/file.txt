@@ -1,0 +1,8 @@
+[01;34mteste/[0m
+└── [01;34mteste2[0m
+    ├── arquivo2.txt
+    ├── arquivo.txt
+    └── [01;34mteste3[0m
+        └── arquivo3.txt
+
+2 directories, 3 files

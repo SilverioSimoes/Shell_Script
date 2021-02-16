@@ -1,0 +1,59 @@
+# date
+qui 11 fev 2021 00:03:53 -03
+
+# date -u
+qui 11 fev 2021 03:04:50 UTC
+
+# date -d today
+qui 11 fev 2021 00:07:11 -03
+
+# date -d tomorrow
+sex 12 fev 2021 00:08:52 -03
+
+# date -d yesterday
+qua 10 fev 2021 00:10:29 -03
+
+# date -d "2 days ago"
+ter 09 fev 2021 00:14:59 -03
+
+# date -d "5 weeks"
+qui 18 mar 2021 00:17:15 -03
+
+# date +%d/%m/%y
+11/02/21
+
+# date +%d/%m/%Y
+11/02/2021
+
+# date +%H:%M:%S
+00:26:27
+
+# date +%d%%%m%%%Y
+11%02%2021
+
+# date +%d%t%m%t%Y
+11	02	2021
+
+# date +%d%n%m%n%Y
+07
+12
+2021
+
+# date +%a
+qui
+
+# date +%A
+quinta
+
+# date +%b
+fev
+
+# date +%B
+fevereiro
+
+# date +%j
+042
+
+# date +%s
+1613015932
+

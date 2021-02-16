@@ -1,0 +1,57 @@
+# touch arquivo.txt
+
+# file="arquivo.txt"
+
+# echo $file 
+arquivo.txt
+
+# echo ${file##*.} 
+txt
+
+# echo ${file%%.*} 
+arquivo
+
+# echo ${file~} 
+Arquivo.txt
+
+# nome="Silvério"
+
+# echo ${nome~}
+silvério
+
+# echo ${nome~~}
+sILVÉRIO
+
+# echo $file
+arquivo.txt
+
+# echo ${file^}
+Arquivo.txt
+
+# echo ${file^^}
+ARQUIVO.TXT
+
+# echo $vazia
+
+# echo $nome
+Silvério
+
+# echo ${vazia:-A variável está vazia}
+A variável está vazia
+
+# echo ${nome:-A variável está vazia}
+Silvério
+
+# echo ${nome:+A variável tem um valor}
+A variável tem um valor
+
+# echo ${vazia:+A variável tem um valor}
+
+
+# echo ${nome:=valor padrão}
+Silvério
+
+# echo ${vazia:=valor padrão}
+valor padrão
+
+#

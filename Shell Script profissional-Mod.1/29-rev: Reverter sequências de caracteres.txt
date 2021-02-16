@@ -1,0 +1,24 @@
+# rev
+silverio 
+oirevlis
+1,2,3,4,5,6,7
+7,6,5,4,3,2,1
+
+# cat usuarios.txt
+silverio,43,teste@gmail.com,1234567
+
+# cat usuarios.txt | cut -d"," -f4
+1234567
+
+# cat usuarios.txt 
+silverio,simoes,43,teste@gmail.com,1234567
+
+# cat usuarios.txt | rev
+7654321,moc.liamg@etset,34,seomis,oirevlis
+
+# cat usuarios.txt | rev | cut -d"," -f1
+7654321
+
+# cat usuarios.txt | rev | cut -d"," -f1 | rev
+1234567
+

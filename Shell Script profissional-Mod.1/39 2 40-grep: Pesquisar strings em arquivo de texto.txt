@@ -1,0 +1,82 @@
+####### grep - globally search a regular expression and print #######
+
+# cat -n texto.txt 
+     1	# Texto qualquer
+     2	
+     3	Olá blz galera?
+     4	Esse é
+     5	BUGapenas BUGum testeBUG
+     6	
+     7	Ass.
+     8	
+     9	
+    10	Silvério
+    11	
+
+# grep -n BUG texto.txt 
+5:BUGapenas BUGum testeBUG
+
+# grep -v BUG texto.txt 
+# Texto qualquer
+
+Olá blz galera?
+Esse é
+
+Ass.
+
+
+Silvério
+
+# grep -c BUG texto.txt 
+1
+
+# echo "BUG" >> texto.txt 
+
+#cat -n texto.txt 
+     1	# Texto qualquer
+     2	
+     3	Olá blz galera?
+     4	Esse é
+     5	BUGapenas BUGum testeBUG
+     6	
+     7	Ass.
+     8	
+     9	
+    10	Silvério
+    11	
+    12	BUG
+
+# grep -c BUG texto.txt 
+2
+
+# grep -n BUG texto.txt 
+5:BUGapenas BUGum testeBUG
+12:BUG
+
+# grep -o BUG texto.txt 
+BUG
+BUG
+BUG
+BUG
+
+# grep -B 2 "galera" texto.txt 
+# Texto qualquer
+
+Olá blz galera?
+
+# grep -C 2 "galera" texto.txt 
+# Texto qualquer
+
+Olá blz galera?
+Esse é
+BUGapenas BUGum testeBUG
+
+# grep -q galera texto.txt 
+
+# echo $?
+0
+
+# grep -q galerax texto.txt 
+1
+
+

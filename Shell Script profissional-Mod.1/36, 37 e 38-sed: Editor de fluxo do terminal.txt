@@ -1,0 +1,224 @@
+# echo "mensagem"
+mensagem
+
+# ls *.txt
+ arquivos.txt
+ arquivo.txt
+ cadastro.txt
+ novo.txt
+ numeros2.txt
+ numeros.txt
+ usuarios2.txt
+ usuarios.txt
+
+# ls *[0-9].txt
+numeros2.txt  usuarios2.txt
+
+# cat texto.txt 
+# Testo qualque
+
+Olá tudo bem?
+Este é um texto
+de teste
+
+Ass.
+
+Silvério
+
+# sed -n '1p' texto.txt 
+# Testo qualque
+
+# sed -n '/bem/p' texto.txt 
+Olá tudo bem?
+
+# sed -n '1,3p' texto.txt 
+# Testo qualque
+
+Olá tudo bem?
+
+#sed -n '/?/p' texto.txt 
+Olá tudo bem?
+
+# sed -n '/e$/p' texto.txt 
+# Testo qualque
+de teste
+
+# sed -n '/^O/p' texto.txt 
+Olá tudo bem?
+
+# cat texto.txt 
+# Testo qualque
+
+Olá tudo bem?
+Este é um texto
+de teste
+
+Ass.
+
+Silvério
+
+# sed -i 's/Testo/Texto/;s/qualque/qualquer/' texto.txt 
+
+# cat texto.txt 
+# Texto qualquer
+
+Olá tudo bem?
+Este é um texto
+de teste
+
+Ass.
+
+Silvério
+
+# sed -i '3,5s/^/#/' texto.txt 
+
+# cat texto.txt 
+# Texto qualquer
+
+#Olá tudo bem?
+#Este é um texto
+#de teste
+
+Ass.
+
+Silvério
+
+# sed -i '/bem/s/$/Isso é um comentário./' texto.txt 
+
+# cat texto.txt 
+# Texto qualquer
+
+#Olá tudo bem?Isso é um comentário.
+#Este é um texto
+#de teste
+
+Ass.
+
+Silvério
+
+# cat texto.txt 
+# Texto qualquerLIXO
+
+Olá blz galera?LIXO
+Esse é
+apenas um BUGteste
+
+***LINHA LIXO***
+
+***BUG***
+Ass.
+
+Silvério
+
+# sed -i 's/LIXO//' texto.txt 
+
+# cat texto.txt 
+# Texto qualquer
+
+Olá blz galera?
+Esse é
+apenas um BUGteste
+
+***LINHA ***
+
+***BUG***
+Ass.
+
+Silvério
+
+# cat texto.txt 
+# Texto qualquer
+
+Olá blz galera?
+Esse é
+BUGapenas BUGum BUGteste
+
+***LINHA ***
+
+***BUG***
+Ass.
+
+Silvério
+
+# sed -i 's/BUG//' texto.txt 
+
+# cat texto.txt 
+# Texto qualquer
+
+Olá blz galera?
+Esse é
+apenas BUGum BUGteste
+
+***LINHA ***
+
+******
+Ass.
+
+Silvério
+
+# sed -i 's/BUG//g' texto.txt 
+
+# cat texto.txt 
+# Texto qualquer
+
+Olá blz galera?
+Esse é
+apenas um teste
+
+***LINHA ***
+
+******
+Ass.
+
+Silvério
+
+# sed -i '/^\*/d' texto.txt 
+
+# cat texto.txt 
+# Texto qualquer
+
+Olá blz galera?
+Esse é
+apenas um teste
+
+
+Ass.
+
+Silvério
+
+#sed '6d' texto.txt 
+# Texto qualquer
+
+Olá blz galera?
+Esse é
+apenas um teste
+
+Ass.
+
+Silvério
+
+# sed -i '6d' texto.txt 
+
+# cat texto.txt 
+# Texto qualquer
+
+Olá blz galera?
+Esse é
+apenas um teste
+
+Ass.
+
+Silvério
+
+# sed -i '/\.$/d' texto.txt 
+
+# cat texto.txt 
+# Texto qualquer
+
+Olá blz galera?
+Esse é
+apenas um teste
+
+
+Silvério
+

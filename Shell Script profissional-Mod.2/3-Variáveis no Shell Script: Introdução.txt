@@ -1,0 +1,41 @@
+# cp mensagem.sh variaveis.sh
+
+# ls
+mensagem.sh
+olamundo.sh
+variaveis.sh
+
+# gedit variaveis.sh &
+#!/bin/bash
+
+#Esse é o nome do usuário:
+NOME="SILVÉRIO"
+
+VAR_GLOBAL="sou var global!"
+
+Imprime_global(){
+	echo "$VAR_GLOBAL"
+}
+
+Imprime_global
+
+# ./variaveis.sh 
+sou var global!
+
+# gedit variaveis.sh &
+#!/bin/bash
+
+#Esse é o nome do usuário:
+NOME="SILVÉRIO"
+
+VAR_GLOBAL="$NOME, sou var global!"
+
+Imprime_global(){
+	echo "$VAR_GLOBAL"
+}
+
+Imprime_global
+
+#./variaveis.sh 
+SILVÉRIO, sou var global!
+

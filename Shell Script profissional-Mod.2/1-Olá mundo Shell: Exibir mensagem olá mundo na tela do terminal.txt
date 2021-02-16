@@ -1,0 +1,46 @@
+# echo "Olá mundo, Shell Script!"
+Olá mundo, Shell Script!
+
+# ls
+
+olamundo.sh
+
+# gedit olamundo.sh &
+
+#cat olamundo.sh 
+#!/bin/bash
+
+echo "Olá mundo, Shell Script!"
+
+# chmod 777 olamundo.sh 
+
+# ls -l
+-rwxrwxrwx. 1 silverio silverio  45 fev 15 15:54  olamundo.sh
+
+# ./olamundo.sh
+Olá mundo, Shell Script!
+
+# gedit olamundo.sh &
+#!/bin/bash
+
+echo "Olá mundo, Shell Script!"
+
+pwd
+
+# ./olamundo.sh
+Olá mundo, Shell Script!
+/home/silverio/Cursos/Shell/Shell Script profissional-Mod.2
+
+# gedit olamundo.sh &
+#!/bin/bash
+
+MSG="Olá mundo, Shell Script!"
+
+echo $MSG
+
+pwd
+
+# ./olamundo.sh
+Olá mundo, Shell Script!
+/home/silverio/Cursos/Shell/Shell Script profissional-Mod.2
+ 

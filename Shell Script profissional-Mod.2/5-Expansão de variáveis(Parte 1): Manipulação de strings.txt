@@ -1,0 +1,35 @@
+# var="Silvério Simões"
+
+# echo $var
+Silvério Simões
+
+# echo ${var:9}
+Simões
+
+# echo $var
+Silvério Simões
+
+# var=${var:9}
+
+# echo $var
+Simões
+
+# var="Silvério Simões"
+
+# echo ${#var}
+15
+
+# echo ${var/Simões/Paulino Simões}
+Silvério Paulino Simões
+
+# var2="Olá Silvério Simões! Seu nome é Simões?"
+
+# echo ${var2/ /}
+OláSilvério Simões! Seu nome é Simões?
+
+# echo ${var2// /}
+OláSilvérioSimões!SeunomeéSimões?
+
+# echo ${var2//Simões/Paulino Simões}
+Olá Silvério Paulino Simões! Seu nome é Paulino Simões?
+

@@ -1,0 +1,35 @@
+# ls
+usuarios2.txt	usuarios.txt
+
+# cat usuarios.txt 
+silverio,simoes,43,teste@gmail.com,1234567
+
+# cat usuario2.txt 
+Fulano,fulano2,34,fulano@gmail.com,3456789
+
+# cat usuarios.txt usuarios2.txt 
+silverio,simoes,43,teste@gmail.com,1234567
+Fulano,fulano2,34,fulano@gmail.com,3456789
+
+# paste usuarios.txt  usuarios2.txt 
+silverio,simoes,43,teste@gmail.com,1234567	Fulano,fulano2,34,fulano@gmail.com,3456789
+
+# paste usuarios.txt  usuarios2.txt -d:
+silverio,simoes,43,teste@gmail.com,1234567:Fulano,fulano2,34,fulano@gmail.com,3456789
+
+# paste -d: usuarios.txt  usuarios2.txt
+silverio,simoes,43,teste@gmail.com,1234567:Fulano,fulano2,34,fulano@gmail.com,3456789
+
+# echo $PATH
+/home/silverio/.local/bin:/home/silverio/bin:/usr/lib64/ccache:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/usr/libexec/sdcc:/usr/libexec/sdcc
+
+# paste -d"\n" usuarios.txt  usuarios2.txt
+silverio,simoes,43,teste@gmail.com,1234567
+Fulano,fulano2,34,fulano@gmail.com,3456789
+
+# paste -d"\n" usuarios.txt  usuarios2.txt >> cadastro.txt
+
+# cat cadastro.txt 
+silverio,simoes,43,teste@gmail.com,1234567
+Fulano,fulano2,34,fulano@gmail.com,3456789
+ 

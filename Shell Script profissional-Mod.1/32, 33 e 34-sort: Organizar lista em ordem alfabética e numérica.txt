@@ -1,0 +1,183 @@
+# echo -e "um\ndois\ntrês"
+um
+dois
+três
+
+# echo -e "um\ndois\ntrês" | sort
+dois
+três
+um
+
+# echo -e "um\ndois\ntrês" > numeros.txt
+
+# cat numeros.txt 
+um
+dois
+três
+
+# sort numeros.txt 
+dois
+três
+um
+
+# cat numeros.txt 
+um
+dois
+três
+
+# echo "um" >> numeros.txt 
+
+# cat numeros.txt 
+um
+dois
+três
+um
+
+# sort numeros.txt 
+dois
+três
+um
+um
+
+# sort -u numeros.txt 
+dois
+três
+um
+
+# sort numeros.txt -o novo.txt
+
+# cat novo.txt 
+dois
+três
+um
+um
+
+# echo -e "2\n1\n4\n3" >> numeros2.txt
+
+# cat numeros2.txt 
+2
+1
+4
+3
+
+# paste numeros.txt numeros2.txt 
+um	2
+dois	1
+três	4
+um	3
+
+# paste numeros.txt numeros2.txt > arquivo.txt
+
+# cat arquivo.txt 
+um	2
+dois	1
+três	4
+um	3
+
+# sort -k2 arquivo.txt 
+dois	1
+um	2
+um	3
+três	4
+
+# sort -k1 arquivo.txt 
+dois	1
+três	4
+um	2
+um	3
+
+# sort -r arquivo.txt 
+um	3
+um	2
+três	4
+dois	1
+
+# sort -r -k2 arquivo.txt 
+três	4
+um	3
+um	2
+dois	1
+
+# cat arquivos.txt 
+creStackedTrace-m0-0.rsf
+creStackedTrace-m0-10.rsf
+creStackedTrace-m0-11.rsf
+creStackedTrace-m0-12.rsf
+creStackedTrace-m0-13.rsf
+creStackedTrace-m0-14.rsf
+creStackedTrace-m0-15.rsf
+creStackedTrace-m0-16.rsf
+creStackedTrace-m0-17.rsf
+creStackedTrace-m0-18.rsf
+creStackedTrace-m0-19.rsf
+creStackedTrace-m0-1.rsf
+creStackedTrace-m0-2.rsf
+creStackedTrace-m0-20.rsf
+creStackedTrace-m0-21.rsf
+creStackedTrace-m0-22.rsf
+creStackedTrace-m0-23.rsf
+creStackedTrace-m0-24.rsf
+creStackedTrace-m0-25.rsf
+creStackedTrace-m0-26.rsf
+creStackedTrace-m0-27.rsf
+creStackedTrace-m0-28.rsf
+creStackedTrace-m0-29.rsf
+creStackedTrace-m0-3.rsf
+
+# sort -n arquivos.txt 
+
+
+creStackedTrace-m0-0.rsf
+creStackedTrace-m0-10.rsf
+creStackedTrace-m0-11.rsf
+creStackedTrace-m0-12.rsf
+creStackedTrace-m0-13.rsf
+creStackedTrace-m0-14.rsf
+creStackedTrace-m0-15.rsf
+creStackedTrace-m0-16.rsf
+creStackedTrace-m0-17.rsf
+creStackedTrace-m0-18.rsf
+creStackedTrace-m0-19.rsf
+creStackedTrace-m0-1.rsf
+creStackedTrace-m0-20.rsf
+creStackedTrace-m0-21.rsf
+creStackedTrace-m0-22.rsf
+creStackedTrace-m0-23.rsf
+creStackedTrace-m0-24.rsf
+creStackedTrace-m0-25.rsf
+creStackedTrace-m0-26.rsf
+creStackedTrace-m0-27.rsf
+creStackedTrace-m0-28.rsf
+creStackedTrace-m0-29.rsf
+creStackedTrace-m0-2.rsf
+creStackedTrace-m0-3.rsf
+
+# sort -t"-" -k3 -n arquivos.txt 
+
+
+creStackedTrace-m0-0.rsf
+creStackedTrace-m0-1.rsf
+creStackedTrace-m0-2.rsf
+creStackedTrace-m0-3.rsf
+creStackedTrace-m0-10.rsf
+creStackedTrace-m0-11.rsf
+creStackedTrace-m0-12.rsf
+creStackedTrace-m0-13.rsf
+creStackedTrace-m0-14.rsf
+creStackedTrace-m0-15.rsf
+creStackedTrace-m0-16.rsf
+creStackedTrace-m0-17.rsf
+creStackedTrace-m0-18.rsf
+creStackedTrace-m0-19.rsf
+creStackedTrace-m0-20.rsf
+creStackedTrace-m0-21.rsf
+creStackedTrace-m0-22.rsf
+creStackedTrace-m0-23.rsf
+creStackedTrace-m0-24.rsf
+creStackedTrace-m0-25.rsf
+creStackedTrace-m0-26.rsf
+creStackedTrace-m0-27.rsf
+creStackedTrace-m0-28.rsf
+creStackedTrace-m0-29.rsf
+
+  
