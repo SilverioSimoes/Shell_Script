@@ -1,0 +1,11 @@
+# VAR="Silvério"
+
+# echo $VAR
+Silvério
+
+
+# if [ "$VAR" = "Silvério" ]
+> then
+> echo "Olá usuário $VAR"
+> fi
+Olá usuário Silvério

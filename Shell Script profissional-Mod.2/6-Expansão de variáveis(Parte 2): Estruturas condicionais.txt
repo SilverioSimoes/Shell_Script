@@ -54,4 +54,5 @@ Silvério
 # echo ${vazia:=valor padrão}
 valor padrão
 
-#
+# echo ${vazia2:?Mensagem de erro\!}
+bash: vazia2: Mensagem de erro!
