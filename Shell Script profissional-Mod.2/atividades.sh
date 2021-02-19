@@ -4,31 +4,34 @@
 
 ATIVIDADES="
 Atividades:
-1 - Editar este Programa
+1 - Atualizar o sistema
 2 - Editar o Bash
 3 - Abrir o Navegador
+4 - Editar este Programa
 "
-# Lendo e executando a opção:
+# Saudação:
 if [ $(date +%H) -le 11  ]
 then
 	echo "Bom dia Silvério! O que faremos agora?"
 	echo "$ATIVIDADES"
-	read -p "Digite a opção: " OPCAO
+	
 elif [ $(date +%H) -le 17 ]
 then
 	echo "Boa tarde Silvério! O que faremos agora?"
 	echo "$ATIVIDADES"
-	read -p "Digite a opção: " OPCAO
 
-elif [ $(date +%H) -le 23 ]
-then
+else
 	echo "Boa noite Silvério! O que faremos agora?"
 	echo "$ATIVIDADES"
-	read -p "Digite a opção: " OPCAO
 
-elif [ "$OPCAO" -eq 1 ]
+fi
+
+# Lendo e executando a opção:
+read -p "Digite a opção: " OPCAO
+
+if [ "$OPCAO" -eq 1 ]
 then 
-	exec gedit ~/atividades &
+	exec sudo dnf update
 
 elif [ "$OPCAO" -eq 2 ]
 then 
@@ -39,7 +42,12 @@ elif [ "$OPCAO" -eq 3 ]
 then 
 	exec google-chrome &
 
+elif [ "$OPCAO" -eq 4 ]
+then
+	exec gedit ~/atividades.sh &
+
 else
 	echo "Opção inválida!"
+	exit 1
 fi
 
