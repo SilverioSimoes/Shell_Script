@@ -10,11 +10,9 @@
 # Acima de  9 pontos - Excelente
 # 
 # Lendo e executando a opção:
-#read -p "Digite a nota: " NOTA
+read -p "Digite a nota: " NOTA
 
-NOTA="40"
-
-#NOTA=$(echo "$NOTA*10" | bc -l | cut -d"," -f1)
+NOTA=$(echo $NOTA*10 | bc -l | cut -d"." -f1)
 
 if [ "$NOTA" -le "50" ]
 then 
